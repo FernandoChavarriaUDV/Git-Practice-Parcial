@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  padding: 0 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 16px;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 12px;
+}
