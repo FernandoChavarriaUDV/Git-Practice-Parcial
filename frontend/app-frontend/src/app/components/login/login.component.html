@@ -1,47 +1,15 @@
-<div class="page">
-  <mat-card class="card">
-    <mat-card-title>Inicio de sesión</mat-card-title>
+<h2>Iniciar Sesión</h2>
 
-    <mat-card-content>
-      <form [formGroup]="form" (ngSubmit)="submit()">
-        <mat-form-field appearance="outline" class="full-width">
-          <mat-label>Correo electrónico</mat-label>
-          <input
-            matInput
-            type="email"
-            formControlName="email"
-            placeholder="usuario@correo.com"
-          />
+<form>
+  <label>Usuario</label>
+  <input type="text" placeholder="Ingrese usuario" />
 
-          <mat-error *ngIf="form.get('email')?.hasError('required')">
-            El correo electrónico es obligatorio
-          </mat-error>
-          <mat-error *ngIf="form.get('email')?.hasError('email')">
-            Ingrese un correo electrónico válido
-          </mat-error>
-        </mat-form-field>
+  <br /><br />
 
-        <mat-form-field appearance="outline" class="full-width">
-          <mat-label>Contraseña</mat-label>
-          <input
-            matInput
-            type="password"
-            formControlName="password"
-            placeholder="Ingrese su contraseña"
-          />
+  <label>Contraseña</label>
+  <input type="password" placeholder="Ingrese contraseña" />
 
-          <mat-error *ngIf="form.get('password')?.hasError('required')">
-            La contraseña es obligatoria
-          </mat-error>
-          <mat-error *ngIf="form.get('password')?.hasError('minlength')">
-            La contraseña debe tener al menos 6 caracteres
-          </mat-error>
-        </mat-form-field>
+  <br /><br />
 
-        <button mat-raised-button color="primary" type="submit" class="full-width">
-          Ingresar
-        </button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-</div>
+  <button>Login</button>
+</form>
